@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JScript.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: #003366; height: 100%; width: 100%">  
+    <header>
+        <img src="logo.png" alt="Warner Bros logo" class="logo">
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Movies.html">Movies</a></li>
+                <li><a href="TvShows.html">TvShows</a></li>
+                <li><a href="Games & Apps.html">Games & Apps</a></li>
+                <li><a href="Collections.html">Collections</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <div id="movieCarousel" class="carousel slide" data-interval="1000">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#movieCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#movieCarousel" data-slide-to="1"></li>
+            <li data-target="#movieCarousel" data-slide-to="2"></li>
+        </ul>
+       
+        <!-- The slideshow -->
+           
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="downtown owl.png" alt="Hola" style="width:100%; height:520px;"><a href="https://www.youtube.com/watch?v=Q4HGKpcOKAc&pp=ygUUZG93bnRvd24gb3dsIHRyYWlsZXI%3D" target="_blank">
+                <div class="carousel-caption">
+                    <h3>DOWNTOWN OWL (Trailer)</h3>
+                    <p>Upcoming.</p>
+                </div>
+                </a>
+            </div>
+       
+       
+            <div class="carousel-item">
+              <img src="Challengers.png" alt="Movie 2" style="width:100%; height:520px;"><a href="https://www.youtube.com/watch?v=VobTTbg-te0&pp=ygUTY2hhbGxlbmdlcnMgdHJhaWxlcg%3D%3D"  target="_blank">
+                    <div class="carousel-caption">
+                        <h3>CHALLENGERS (Trailer)</h3>
+                        <p>Available on neflix.</p>
+                    </div>
+                </a>
+            </div>
+           
+            <div class="carousel-item">
+                <img src="Cabrini.png" alt="Movie 3" style="width:100%; height:520px;"><a href="https://www.youtube.com/watch?v=w3ugHP-yZXw&pp=ygUMZ2hvc3RidXN0ZXJz" target="_blank">
+                <div class="carousel-caption">
+                    <h3>CABRINI (Trailer)</h3>
+                    <p>Available on netflix.</p>
+                </div>
+                </a>
+            </div>
+        </div>
+       
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#movieCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#movieCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </main>
+
+    <main>
+    
+      <h2> Recently Added </h2>
+        <section class="movie-cards">
+  
+         <div class="movie-card">
+          <img class="movie-image" src="Uss.png" height="100%" width="100%"  alt="Movie 1" title="Us">
+          <div class="movie-title"></div>
+          <div class="movie-description">Us</div>
+          <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=hNCmb-4oXJA&t=25s&pp=ygUCdXM%3D')">Play</button>
+        </div>
+        </div>
+        
+  
+        <div class="movie-card">
+            <img class="movie-image" src="FastX.png" height="100%" width="100%"  alt="Movie 2" title="FastX">
+            <div class="movie-title"></div>
+            <div class="movie-description">FastX</div>
+            <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=32RAq6JzY-w&t=101s&pp=ygUGZmFzdCB4')">Play</button>
+          </div>
+          <div class="movie-card">
+            <img class="movie-image" src="the matrix.png" height="100%" width="100%" alt="Movie 3" title="The Matrix">
+            <div class="movie-title"></div>
+            <div class="movie-description">The Matrix</div>
+            <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=vKQi3bBA1y8&t=39s&pp=ygUSdGhlIG1hdHJpeCB0cmFpbGVy')">Play</button>
+          </div>
+          <div class="movie-card">
+            <img class="movie-image" src="acrossthespider.png" height="100%" width="100%" alt="Movie 3" title="The Matrix">
+            <div class="movie-title"></div>
+            <div class="movie-description">The Matrix</div>
+            <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=cqGjhVJWtEg&pp=ygUfYWNyb3NzIHRoZSBzcGlkZXIgdmVyc2UgdHJhaWxlcg%3D%3D')">Play</button>
+          </div>
+          <div class="movie-card">
+            <img class="movie-image" src="avatar.png" height="100%" width="100%" alt="Movie 3" title="The Matrix">
+            <div class="movie-title"></div>
+            <div class="movie-description">The Matrix</div>
+            <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=d9MyW72ELq0&pp=ygUGYXZhdGFy')">Play</button>
+          </div>
+          <div class="movie-card">
+            <img class="movie-image" src="blackpanther.png" height="100%" width="100%" alt="Movie 3" title="The Matrix">
+            <div class="movie-title"></div>
+            <div class="movie-description">The Matrix</div>
+            <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=xjDjIWPwcPU&pp=ygUNYmxhY2sgcGFudGhlcg%3D%3D')">Play</button>
+          </div>
+          <div class="movie-card">
+            <img class="movie-image" src="body of evidence.png" height="100%" width="100%" alt="Movie 3" title="The Matrix">
+            <div class="movie-title"></div>
+            <div class="movie-description">The Matrix</div>
+            <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=51xEHzC-rjQ&pp=ygUYYm9keSBvZiBldmlkZW5jZSB0cmFpbGVy')">Play</button>
+          </div>
+          
+          
+          
+        </section>
+    </main>        
+
+    <main>
+      
+      <h2> TRENDING  </h2>
+      <section class="movie-cards">
+  
+       <div class="movie-card">
+        <img class="movie-image" src="abigal-hollywood-movie.png"  alt="Movie 1" title="Abigail">
+        <div class="movie-title"></div>
+        <div class="movie-description">Abigail</div>
+        <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=3PsP8MFH8p0&pp=ygUPYWJpZ2FpbCB0cmFpbGVy')">Play</button>
+      </div>
+      <div class="movie-card">
+        <img class="movie-image" src="arcadian-hollywood-movie.png"  alt="Movie 1" title="Arcadian">
+        <div class="movie-title"></div>
+        <div class="movie-description">Arcadian</div>
+        <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=RGLtN_2UrEw&pp=ygUQYXJjYWRpYW4gdHJhaWxlcg%3D%3D')">Play</button>
+      </div>
+      <div class="movie-card">
+        <img class="movie-image" src="Cabrini.png"  alt="Movie 1" title="Cabrini">
+        <div class="movie-title"></div>
+        <div class="movie-description">Cabrini</div>
+        <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=ZaMlUazXvyY&pp=ygUPY2FicmluaSB0cmFpbGVy')">Play</button>
+      </div>
+      <div class="movie-card">
+        <img class="movie-image" src="Challengers.png"  alt="Movie 1" title="Challengers">
+        <div class="movie-title"></div>
+        <div class="movie-description">Challengers</div>
+        <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=VobTTbg-te0&t=21s&pp=ygUTY2hhbGxlbmdlcnMgdHJhaWxlcg%3D%3D')">Play</button>
+      </div>
+      <div class="movie-card">
+        <img class="movie-image" src="chasing-raine-hollywood-movie.png"  alt="Movie 1" title="Chasing raine">
+        <div class="movie-title"></div>
+        <div class="movie-description">Chaising Raine</div>
+        <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=pm_L5CDU3VQ&pp=ygUVY2hhc2luZyByYWluZSB0cmFpbGVy')">Play</button>
+      </div>
+      <div class="movie-card">
+        <img class="movie-image" src="abigal-hollywood-movie.png"  alt="Movie 1" title="Abigail">
+        <div class="movie-title"></div>
+        <div class="movie-description">Abigail</div>
+        <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=3PsP8MFH8p0&pp=ygUPYWJpZ2FpbCB0cmFpbGVy')">Play</button>
+      </div>
+      <div class="movie-card">
+        <img class="movie-image" src="founders-day-hollywood-movie.png"  alt="Movie 1" title="Founders day">
+        <div class="movie-title"></div>
+        <div class="movie-description">Founders Day</div>
+        <button class="play-button" onclick="playTrailer('https://www.youtube.com/watch?v=tCYsY7Ats70&pp=ygUUZm91bmRlcnMgZGF5IHRyYWlsZXI%3D')">Play</button>
+      </div>
+
+      </section>
+    </main>
+
+<footer>
+  <p>© 2024 Warner Bros. All rights reserved.</p>
+  <div class="social-links">
+    <a href="https://facebook.com" class="fa fa-facebook"></a>
+    <a href="https://twitter.com" class="fa fa-twitter"></a>
+    <a href="https://youtube.com" class="fa fa-youtube"></a>
+    <a href="https://instagram.com" class="fa fa-instagram"></a>
+  </div>
+  </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('JavaScript is running');
+    const menuIcon = document.querySelector('.menu-icon');
+    const navList = document.querySelector('.nav-list');
+    
+    menuIcon.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        console.log('Menu icon clicked');
+    });
+});
+</script>
+
+</body>
+
+</html>
