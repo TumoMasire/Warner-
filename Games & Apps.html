@@ -6,6 +6,7 @@
     <title>Games & Apps</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 
 </head>
     <body style="background-color: #003366; height: 100%; width: 100%">  
@@ -27,23 +28,261 @@
 
             <h1>Games and Apps</h1>
 
-            <div class="game-card">
-                <img class="game-image" src="Grand theft auto.png" alt="Game Image 1">
-                <div class="play-button" id="playButton1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                        <path d="M11.445 8.227 5.53 4.155A.5.5 0 0 0 5 4.5v7.59a.5.5 0 0 0 .73.44l5.915-4.072a.5.5 0 0 0 0-.814z"/>
-                    </svg>
+            <div class="latest-Realease">
+                <h2>MOST POPULAR DOWNLOADS</h2>
+               
+                <div class="cards">
+                    <div class="card">
+                        <a href="https://www.ea.com/games/need-for-speed/need-for-speed-payback">
+                        <img src="Needforspeed payback.png"alt="">
+                        <div class="content">
+                            <h4>Need for speed:Pay back</h4>
+                            <h6>Racing Game | 2017</h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://www.ea.com/games/need-for-speed/need-for-speed-payback')">Play</button>
+                    </div>
+             
+                    <div class="card">
+                        <a href="https://www.rockstargames.com/gta-v?info=order">
+                        <img src="Grand theft auto.png"alt="">
+                        <div class="content">
+                            <h4>Grand theft auto:Vfive</h4>
+                            <h6>Action-Adventure | 2011</h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://www.rockstargames.com/gta-v?info=order')">Play</button>
+                    </div>
+                
+                    <div class="card">
+                        <a href="https://playclassic.games/games/action-adventure-dos-games-online/play-tomb-raider-online/">
+                        <img src="TombRaider.png"alt="">
+                        <div class="content">
+                            <h4>Tomb Raider</h4>
+                            <h6>Action Game | 2012</h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://playclassic.games/games/action-adventure-dos-games-online/play-tomb-raider-online/')">Play</button>
+                    </div>
+             
+                    <div class="card">
+                        <a href="https://en.softonic.com/download/dream-league-soccer/android/post-download">
+                        <img src="DLS.png"alt="">
+                        <div class="content">
+                            <h4>DreamLeague19</h4>
+                            <h6>Football Game | 2012</h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://en.softonic.com/download/dream-league-soccer/android/post-download')">Play</button>
+                    </div>
+             
+                    <div class="card">
+                        <a href="https://play.google.com/store/apps/details?id=com.ea.games.nfs13_row&hl=en&gl=US">
+                        <img src="Needforspeed most wanted.png"alt="">
+                        <div class="content">
+                            <h4>NeedforSpeed:MS</h4>
+                            <h6>Racing Game | </h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://play.google.com/store/apps/details?id=com.ea.games.nfs13_row&hl=en&gl=US')">Play</button>
+                    </div>
+             
+                    <div class="card">
+                        <a href="https://www.gearsofwar.com/">
+                        <img src="GearsofWar.png"alt="">
+                        <div class="content">
+                            <h4>Gears of War</h4>
+                            <h6>Action Game| </h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://www.gearsofwar.com/')">Play</button>
+                    </div>
+             
+                    <div class="card">
+                        <a href="https://forza.net/horizon">
+                        <img src="ForzaHorizon.png"alt="">
+                        <div class="content">
+                            <h4>Forza Horizon 4</h4>
+                            <h6>Racing Game | 2012</h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://forza.net/horizon')">Play</button>
+                    </div>
                 </div>
-            </div>
+            </div>    
+
+        </main>
+
+        <main>
+
+            <div class="latest-Realease">
+                <h2>RECENT RELEASES</h2>
+               
+                <div class="cards">
+                    <div class="card">
+                        <a href="https://2k.com/en-US/game/wwe-2k18-standard-edition/">
+                        <img src="WWE2k18.png"alt="">
+                        <div class="content">
+                            <h4>WWE2k18</h4>
+                            <h6>Wresling Game | </h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://2k.com/en-US/game/wwe-2k18-standard-edition/')">Play</button>
+                    </div>
+             
+                    <div class="card">
+                        <a href="https://en.softonic.com/download-launch?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb3dubG9hZFR5cGUiOiJyaXNlSW5zdGFsbGVyIiwiZG93bmxvYWRVcmwiOiJodHRwczovL2QxaXN1bXF2bW5xN2p6LmNsb3VkZnJvbnQubmV0L3Jldi9idy92OC4xMDEuMjAuODI1LjAiLCJhcHBJZCI6IjI4NTIxNWZlLTliMmYtMTFlNi1hYzVhLTAwMTYzZWM5ZjVmYSIsInBsYXRmb3JtSWQiOiJ3aW5kb3dzIiwiaWF0IjoxNzE2MzM2MTMwLCJleHAiOjE3MTYzMzk3MzB9.paQB0jPXVbO9n2RiMMCgoLZE_wj4lVZ40TH9A5kg_nI">
+                        <img src="ShareIt.png"alt="">
+                        <div class="content">
+                            <h4>Shareit</h4>
+                            <h6>Sharing App | </h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://en.softonic.com/download-launch?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb3dubG9hZFR5cGUiOiJyaXNlSW5zdGFsbGVyIiwiZG93bmxvYWRVcmwiOiJodHRwczovL2QxaXN1bXF2bW5xN2p6LmNsb3VkZnJvbnQubmV0L3Jldi9idy92OC4xMDEuMjAuODI1LjAiLCJhcHBJZCI6IjI4NTIxNWZlLTliMmYtMTFlNi1hYzVhLTAwMTYzZWM5ZjVmYSIsInBsYXRmb3JtSWQiOiJ3aW5kb3dzIiwiaWF0IjoxNzE2MzM2MTMwLCJleHAiOjE3MTYzMzk3MzB9.paQB0jPXVbO9n2RiMMCgoLZE_wj4lVZ40TH9A5kg_nI')">Play</button>
+                    </div>
+                
+                    <div class="card">
+                        <a href="https://www.adobe.com/creativecloud/plans.html?plan=individual&filter=all&promoid=PYPVPZQK&mv=other">
+                        <img src="Adobe-Ps.png"alt="">
+                        <div class="content">
+                            <h4>Adobe Ps</h4>
+                            <h6>Photoshop| </h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://www.adobe.com/creativecloud/plans.html?plan=individual&filter=all&promoid=PYPVPZQK&mv=other')">Play</button>
+                    </div>
+             
+                    <div class="card">
+                        <a href="https://www.callofduty.com/">
+                        <img src="CallofDuty.png"alt="">
+                        <div class="content">
+                            <h4>Call of duty</h4>
+                            <h6>Action Game| </h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://www.callofduty.com/')">Play</button>
+                    </div>
+             
+                    <div class="card">
+                        <a href="https://ioi.dk/hitman">
+                        <img src="Hitman.png"alt="">
+                        <div class="content">
+                            <h4>Hit Man</h4>
+                            <h6>Action Game| </h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://ioi.dk/hitman')">Play</button>
+                    </div>
+             
+                    <div class="card">
+                        <a href="https://play.google.com/store/apps/details?id=media.audioplayer.musicplayer&hl=en">
+                        <img src="Music.png"alt="">
+                        <div class="content">
+                            <h4>Mp3 Music</h4>
+                            <h6>Music | </h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://play.google.com/store/apps/details?id=media.audioplayer.musicplayer&hl=en')">Play</button>
+                    </div>
+             
+                    <div class="card">
+                        <a href="https://www.fortnite.com/download?lang=en-US">
+                        <img src="Fortnight.png"alt="">
+                        <div class="content">
+                            <h4>Tomb Raider</h4>
+                            <h6>Multiplayer-Action |</h6>
+                        </div>
+                        </a>
+                        <button class="play-button" onclick="playGame('https://www.fortnite.com/download?lang=en-US')">Play</button>
+                    </div>
+                </div>
+            </div>    
+
+        </main>
+
+        <main>
+            <div class="latest-Realease">
+                <h2>. </h2>
+
+            <div class="cards">
+                <div class="card">
+                    <a href="https://amongusplay.online/">
+                    <img src="Among_Us.png"alt="">
+                    <div class="content">
+                        <h4>Among Us</h4>
+                        <h6>Online Multiplayer|</h6>
+                    </div>
+                    </a>
+                    <button class="play-button" onclick="playGame('https://amongusplay.online/')">Play</button>
+                </div>
+         
+                <div class="card">
+                    <a href="https://pubg.com/">
+                    <img src="PubG.png"alt="">
+                    <div class="content">
+                        <h4>PubG</h4>
+                        <h6>Battle Royale | </h6>
+                    </div>
+                    </a>
+                    <button class="play-button" onclick="playGame('https://pubg.com/')">Play</button>
+                </div>
             
-            <div class="game-card">
-                <img class="game-image" src="Needforspeed payback.png" alt="Game Image 2">
-                <div class="play-button" id="playButton2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                        <path d="M11.445 8.227 5.53 4.155A.5.5 0 0 0 5 4.5v7.59a.5.5 0 0 0 .73.44l5.915-4.072a.5.5 0 0 0 0-.814z"/>
-                    </svg>
+                <div class="card">
+                    <a href="https://store.steampowered.com/app/265550/Dead_Rising_3_Apocalypse_Edition/">
+                    <img src="DeadRising.png"alt="">
+                    <div class="content">
+                        <h4>Dead Rising</h4>
+                        <h6>Action-Adventure| </h6>
+                    </div>
+                    </a>
+                    <button class="play-button" onclick="playGame('https://store.steampowered.com/app/265550/Dead_Rising_3_Apocalypse_Edition/')">Play</button>
+                </div>
+         
+                <div class="card">
+                    <a href="https://playclassic.games/games/action-adventure-dos-games-online/play-tomb-raider-online/">
+                    <img src="Garena-freefire.png"alt="">
+                    <div class="content">
+                        <h4>Garena-freefire</h4>
+                        <h6>Action | </h6>
+                    </div>
+                    </a>
+                    <button class="play-button" onclick="playGame('https://amongusplay.online/')">Play</button>
+                </div>
+         
+                <div class="card">
+                    <a href="https://ff.garena.com/">
+                    <img src="TombRaider.png"alt="">
+                    <div class="content">
+                        <h4>Tomb Raider</h4>
+                        <h6>Action | </h6>
+                    </div>
+                    </a>
+                    <button class="play-button" onclick="playGame('https://ff.garena.com/')">Play</button>
+                </div>
+         
+                <div class="card">
+                    <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiOkuGv0qCGAxVzllAGHZ6EAt4YABAAGgJkZw&ase=2&gclid=Cj0KCQjwjLGyBhCYARIsAPqTz18YaB3rVpS5pfSXekUb6usmzmw33ejf6BbdSGA__83aNR-lbLtPEIEaAk2AEALw_wcB&ohost=www.google.com&cid=CAESV-D2lwO1EVEkDV3v8fbtxuJwcfNo1vN4uvQyGt9zIhKLH7_v9mxoXgtaE0HMYKwpUupDTkdX-lG2FDQssd8U2YlVU6PrlTxPZiAlmM4pTLNYg7y57AG0mA&sig=AOD64_09d3huahlMlBT6IL_-tkQWm9_hWQ&q&nis=4&adurl&ved=2ahUKEwiAs9iv0qCGAxVETUEAHYLKAhkQ0Qx6BAgPEAM">
+                    <img src="Subway_Surfers.png"alt="">
+                    <div class="content">
+                        <h4>Subway_Surfers</h4>
+                        <h6>Endless Runner | </h6>
+                    </div>
+                    </a>
+                    <button class="play-button" onclick="playGame('https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiOkuGv0qCGAxVzllAGHZ6EAt4YABAAGgJkZw&ase=2&gclid=Cj0KCQjwjLGyBhCYARIsAPqTz18YaB3rVpS5pfSXekUb6usmzmw33ejf6BbdSGA__83aNR-lbLtPEIEaAk2AEALw_wcB&ohost=www.google.com&cid=CAESV-D2lwO1EVEkDV3v8fbtxuJwcfNo1vN4uvQyGt9zIhKLH7_v9mxoXgtaE0HMYKwpUupDTkdX-lG2FDQssd8U2YlVU6PrlTxPZiAlmM4pTLNYg7y57AG0mA&sig=AOD64_09d3huahlMlBT6IL_-tkQWm9_hWQ&q&nis=4&adurl&ved=2ahUKEwiAs9iv0qCGAxVETUEAHYLKAhkQ0Qx6BAgPEAM')">Play</button>
+                </div>
+         
+                <div class="card">
+                    <a href="https://8ballpool.com/game">
+                    <img src="8ball pool.png"alt="">
+                    <div class="content">
+                        <h4>8ball pool</h4>
+                        <h6>Pool Game | </h6>
+                    </div>
+                    </a>
+                    <button class="play-button" onclick="playGame('https://8ballpool.com/game')">Play</button>
                 </div>
             </div>
+        </div>    
 
         </main>
 
@@ -57,21 +296,18 @@
             </div>
             </footer>
 
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
             <script>
-                const playButton1 = document.getElementById('playButton1');
-                playButton1.addEventListener('click', function() {
-                    // Add your play game functionality here
-                    alert('Play button for Game 1 clicked!');
+                var swiper = new Swiper('.swiper-container', {
+                  slidesPerView: 'auto',
+                  spaceBetween: 20,
+                  pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                  },
                 });
-            
-                const playButton2 = document.getElementById('playButton2');
-                playButton2.addEventListener('click', function() {
-                    // Add your play game functionality here
-                    alert('Play button for Game 2 clicked!');
-                });
-            
-                // Add more event listeners for additional game cards
-            </script>
+              </script>
 
     </body>
 
@@ -81,6 +317,12 @@
 
 
 
+
+
+
+
+    
+    
 
 
 
